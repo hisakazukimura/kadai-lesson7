@@ -32,23 +32,18 @@ body
 
 #Box
 {
-    width: 640px;
     margin: 0 auto;
 }
-#ec-box 
-{
-    width: 660px;
-    margin-right: -20px;
-}
+
 .channel 
 {
-    width: 200px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: 30%;
+    margin: 0 2% 10px;
     float: left;
-    display: inline;   
+    display: inline;  
     font-size: auto;
 }
+
 .title 
 {
     font-weight: bold;
@@ -71,7 +66,6 @@ body
 a.button {
 display: block;
 width: 180px;
-height: 15px;
 padding: 0.5em;
 text-align: center;
 text-decoration: none;
@@ -92,16 +86,38 @@ border-radius: 10px;
 }
 .img
 {
-  background-image:url("https://us-east-2.console.aws.amazon.com/cloud9/ide/7c15e0c7e7e24266ab90cdd0204837eb");
+  background-image: url(../images/img_work_blog2-1.jpg);
   height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center center;
  
 }
+
+@media (min-width: 769px) {
+    
+    .channel:nth-child(2n){
+      margin: 0 0 10px;
+    }
+
+}
+
 @media (max-width: 768px) {
-  .ec-box{
+
+  .img{
+    height: 250px;
+  }    
+
+  #ec-box{
     flex-direction: column;
     display: flex;
   }
+  
+  .channel{
+      width: 90%;
+      margin: 10px auto;
+    
+
+  
+  
 }
